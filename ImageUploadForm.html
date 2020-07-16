@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.1-web/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="ImageUpload.css"/>
+	<link rel="stylesheet" href="animation_Scroll/aos.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+	<title>
+		Creator's Club
+	</title>
+</head>
+<body>
+	<!-- Button trigger modal -->
+
+	<div style="background-color: lightblue"  id="Button_cross">
+	<button type="button" class="btn"  data-toggle="modal" data-target="#exampleModalLong" style="background-color: lightblue">
+		<span id="Button_cross" >Our Guildlines</span> 
+		<span style="padding-left: 5px"><i class="fas fa-hand-point-left"></i> Click here to read our Guildlines</span>
+	</button>
+	<span style="float: right; padding-right: 10px;padding-top: 5px"><a href="javascript:hide()"><i class="far fa-times-circle fa-lg" ></i></a></span>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Guildlines</h5>
+	        <button type="button" class="close" 	data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <ul id="cross">
+	        	<li>Everything uploaded here belongs to respected creator.</li>
+	        	<li>If you use a file give credit to it's creator.</li>
+	        	<li>No Nsfw Audio or images are allowed</li>
+	        	<li>If you are creator or have certain art do share over here.</li>
+	        	<li>Do review and suggest this site to other.</li>
+	        	<li style="list-style: none;">
+	        	</li>
+	        </ul>
+	      	
+	      </div>
+	      <div class="modal-footer">
+	        <button type="submit" class="btn btn-secondary" value="submit" name="submit" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Image and text -->
+	<nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #e3f2fd;">
+	  <a class="navbar-brand" href="#"> <img src="https://banner2.cleanpng.com/20180401/yiw/kisspng-apple-logo-svg-5ac07610d08f17.2515969615225625768543.jpg" width="30" height="30" class="d-inline-block align-top" alt="" style=" margin-right: 15px">Creator's Club</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+	    <li class="nav-item dropdown">
+	      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	        <i style="padding-right: 5px" class="fas fa-link fa-lg"></i>Link
+	      </a>
+	      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	        <a class="dropdown-item" href="#"><i class="fab fa-facebook-square" style="color: black;margin-right: 5px"></i>FaceBook</a>
+	        <a class="dropdown-item" href="#"><i class="fab fa-discord" style=" color:  black ;margin-right: 5px"></i>Discord</a>
+	        <a class="dropdown-item" href="#"><i class="fab fa-instagram" style=" color:black;margin-right: 5px"></i>Instagram</a>
+	        <a class="dropdown-item" href="#"><i class="fas fa-envelope-open" style="margin-right: 5px"></i>Email</a>
+	      </div>
+	    </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          <i class="far fa-images" style="margin-right: 5px"></i>Images
+	      </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#"><i class="fas fa-file-image" style="margin-right: 5px"></i>Png</a>
+	          <a class="dropdown-item" href="#"><i class="fas fa-image" style="margin-right: 5px"></i>Jpeg</a>
+	          <a class="dropdown-item" href="#"><i class="fas fa-sticky-note" style="margin-right: 5px"></i>Vector</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item active" href="ImageUploadForm.html"><i class="fas fa-image" style="margin-right: 5px"></i>Upload Images<span class="sr-only">(current)</span></a>
+	        </div>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          <i class="fa fa-headphones" aria-hidden="true" style="margin-right: 5px"></i>Audio
+	      </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="About.html"><i class="fas fa-file-audio" style="margin-right: 5px"></i>Sound Effects</a>
+	          <a class="dropdown-item" href="About.html"><i class="fas fa-audio-description" style="margin-right: 5px"></i>Background Music</a>
+	          <a class="dropdown-item" href="About.html"><i class="fas fa-podcast" style="margin-right: 5px"></i>Songs</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="AudioUpload.html"><i class="fas fa-play-circle" style="margin-right: 5px"></i>Upload Audio</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="SponsorSheet.html"><i class="fa fa-question-circle" aria-hidden="true" style="margin-right: 5px"></i>About</a>
+	      </li>
+		   <li class="nav-item">
+		     <a class="nav-link" href="ComplaintForm.html"><i class="fa fa-exclamation-circle" aria-hidden="true" style="margin-right: 5px"></i>Complaint</a>
+		   </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav>
+
+	<!--  Main  -->
+		<div class="main-block">
+		     <div class="left-part" data-aos="fade-up">
+				<img src="https://webmeup.com/upload/blog/lead-image-105.png" id="ima_for" >
+		     </div>
+		     <form action="ImageUpload.php" method="POST" class="form" data-aos="fade-down">
+		       <h1 class="h1">Image Upload Form</h1>
+		       <div class="info">
+	 	         <input class="input" class="fname" type="text" name="name" placeholder="Full name" required>
+		         <input class="input" type="Email" name="Email" placeholder="Email" required>
+	             <input class="input" class="fname" type="text" name="Link" placeholder="Upload Your Image Link From any platform" required>
+	             <input class="input" class="fname" type="text" name="Credit" placeholder="Credit to this file" required>
+				<select name="Type" class="custom-select mb-3" required>
+				  <option value="" selected>Choose Type Of Image:</option>
+				  <option value="svg">Vector(.svg)</option>
+				  <option value="png">Png</option>
+				  <option value="Jpg">Jpeg/Jpg</option>
+				</select><br>
+				<select name="Class" class="custom-select mb-3" required>
+				  <option value="" selected>Choose Class of image:</option>
+				  <option value="Bg">Background</option>
+				  <option value="Animal">Animal</option>
+				  <option value="Texture">Texture</option>
+				  <option value="Icons">Icons</option>
+				  <option value="Wallpaper(mob)">Wallpaper(Mobile)</option>
+				  <option value="Wallpaper(desk)">Wallpaper(Desktop)</option>
+				  <option value="meme">Meme</option> 
+				</select><br>
+				<div class="custom-file mb-3">
+				      <input type="file" class="custom-file-input" id="customFile" name="video" value="video" id="custom-select" >
+				      <label class="custom-file-label" for="customFile">Image Upload (less than 10mb)</label>
+				    </div>
+		       </div>
+	           <div class="custom-control custom-checkbox">
+	             <input type="checkbox" class="custom-control-input" value="accept" name="accept" id="switch1">
+	             <label class="custom-control-label" for="switch1" style="font-weight: 600">Is this File is copy Right Free</label>
+	           </div>
+
+
+
+		       <p class="p">Description</p>
+		       <div>
+		         <textarea class="textarea" rows="4" name="details" placeholder="Write a description about your image" required></textarea>
+		       </div>
+		       <div class="custom-control custom-checkbox">
+		         <input type="checkbox" class="custom-control-input" value="acceptCond" name="acceptCond" id="switch2">
+		         <label class="custom-control-label" for="switch2"  style="font-weight: 300">Do you accept our Terms and conditions.</label>
+		       </div>
+
+		       <button  class="button" type="submit" name="submit" value="submit">Upload</button>
+		     </form>
+		   </div>
+	
+
+	<!-- FOOTER LINKS -->
+	<div style="border-top: 1px solid black; background-color: #D6D6D6FF">
+		<!-- Footer -->
+		<footer class="page-footer font-small blue pt-4">
+
+		  <!-- Footer Links -->
+		  <div class="container-fluid text-center text-md-left">
+
+		    <!-- Grid row -->
+		    <div class="row">
+
+		      <!-- Grid column -->
+		      <div class="col-md-6 mt-md-0 mt-3"  >
+
+		        <!-- Content -->
+		        <h5 class="text-uppercase" data-aos="fade-down"> <i class="fab fa-aws" style="color: black ;margin-right: 15px"></i>Creator's Club</h5>
+		        <p data-aos="fade-up">The Art Work Provided By Us Are The Under The Right Of The Creator's.<br>
+		       If you have certain art and audio and want to share with other than please share those with us<br>
+		        The Art work provided by us are free to use for commercial purposes, <br>
+		        But do give credit to creator.
+		        Hope You Like Our Free Work And Please Share our site with other creators.</p>
+		      </div>
+		      <!-- Grid column -->
+
+		      <hr class="clearfix w-100 d-md-none pb-3">
+
+		      <!-- Grid column -->
+		      <div class="col-md-3 mb-md-0 mb-3">
+
+		        <!-- Links -->
+		        <h5 class="text-uppercase" data-aos="flip-down" >Our Other Sites</h5>
+
+		        <ul class="list-unstyled" data-aos="fade-up">
+		          <li>
+		            <a href="#!"><i class="fab fa-blogger" style="color: black;margin-right: 5px" ></i>Blog</a>
+		          </li>
+		        </ul>
+
+		      </div>
+		      <!-- Grid column -->
+
+		      <!-- Grid column -->
+		      <div class="col-md-3 mb-md-0 mb-3">
+
+		        <!-- Links -->
+		        <h5 class="text-uppercase" data-aos="flip-down" >Social Media</h5>
+
+		        <ul class="list-unstyled" data-aos="fade-up">
+		          <li>
+		            <a href="#!"> <i class="fab fa-facebook-square" style="color: black;margin-right: 5px"></i>FackeBook</a>
+		          </li>
+		          <li>
+		            <a href="#!"><i class="fab fa-youtube" style="color: black;margin-right: 5px"></i>Youtube</a>
+		          </li>
+		          <li>
+		            <a href="#!"> <i class="fab fa-discord" style=" color:  black ;margin-right: 5px"></i>Discord</a>
+		          </li>
+		          <li>
+		            <a href="#!"><i class="fab fa-instagram" style=" color:black;margin-right: 5px"></i>Instagram</a>
+		          </li>
+		        </ul>
+
+		      </div>
+		      <!-- Grid column -->
+
+		    </div>
+		    <!-- Grid row -->
+
+		  </div>
+		  <!-- Footer Links -->
+
+		  <!-- Copyright -->
+		 <footer id="footer-hider">
+		  <div class="footer-copyright text-left py-3">
+		    <a href="https://mdbootstrap.com/" style="color: black"> © </a>
+		  </div>
+		</footer>
+		  <!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
+		<footer class="page-footer font-small blue fixed-bottom"  style="background-color: rgba(34, 204, 221, 0.3); opacity: 0.8">
+
+		  <!-- Copyright -->
+		  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+		    <a href="https://mdbootstrap.com/">Creatorclub.epizy.com</a>
+		  </div>
+		  <!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
+		<!-- Footer -->
+
+	</div>
+	<script src="animation_Scroll/aos.js"></script>
+	<script src="fontawesome-free-5.13.1-web/js/all.js"></script>
+	<script type="text/javascript">
+		AOS.init(
+			{duration: 1000,});
+	</script>
+	<script src="Logic.js"></script>
+
+
+</body>
+</html>
